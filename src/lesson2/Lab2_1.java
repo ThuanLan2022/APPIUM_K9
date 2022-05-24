@@ -1,8 +1,8 @@
-package lab2;
+package lesson2;
 
 import java.util.Scanner;
 
-public class Lesson2_1 {
+public class Lab2_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         float myWeight, myHeight,BMI;
