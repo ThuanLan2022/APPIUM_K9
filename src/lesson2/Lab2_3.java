@@ -18,17 +18,17 @@ public class Lab2_3 {
         }
         BMI =  yourWeight/ (yourHeight * 2);
         System.out.printf(" Your BMI: %.1f", BMI);
-        if (BMI < 18.5){
+        if (BMI < 18.5f){
             System.out.println("\n You are underweight!");
             float incWeight;
-            incWeight = (float) (18.5 - BMI);
+            incWeight = 18.5f - BMI;
             System.out.println(" You should gain at least: "+incWeight+"kg");
-        } else if (BMI <= 24.9){
+        } else if (BMI <= 24.9f){
             System.out.println("\n You have a healthy weight.");
-        } else if (BMI <= 29.9){
+        } else if (BMI <= 29.9f){
             System.out.println("\n You are overweight.");
             float decWeight;
-            decWeight = (float) (BMI - 24.9);
+            decWeight = BMI - 24.9f;
             System.out.println(" You should lose at least: "+decWeight+"kg");
         } else {
             System.out.println("\n You are obese.");
