@@ -4,13 +4,12 @@ public class Lab_3_4 {
     public static void main(String[] args) {
         int[] intArr1 = {12, 34, 1, 16, 28};
         int[] intArr2 = {1, 12, 16, 28, 34};
-        int[] newArr = null;
+        int[] newArr;
         System.out.println("======Merge 2 SORTED integer array into one SORTED array======");
         newArr = merge(intArr1, intArr2);
-        int leng2Arr = intArr1.length + intArr2.length;
-        for (int i = 0; i < newArr.length; i++) {
+        for (int j : newArr) {
 
-            System.out.println("Mang moi " + newArr[i]);
+            System.out.println("Mang moi " + j);
         }
     }
 
@@ -42,7 +41,7 @@ public class Lab_3_4 {
     }
 
     public static void sortASC(int[] arr) {
-        int temp = arr[0];
+        int temp;
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] > arr[j]) {
