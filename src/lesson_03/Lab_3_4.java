@@ -3,7 +3,7 @@ package lesson_03;
 public class Lab_3_4 {
     public static void main(String[] args) {
         int[] intArr1 = {12, 34, 1, 16, 28};
-        int[] intArr2 = {1, 12, 16, 28, 34};
+        int[] intArr2 = {1, 12, 16, 28, 34, 0, 59, 28};
         int[] newArr = null;
         System.out.println("======Merge 2 SORTED integer array into one SORTED array======");
         newArr = merge(intArr1, intArr2);
