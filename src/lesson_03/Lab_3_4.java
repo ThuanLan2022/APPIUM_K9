@@ -41,6 +41,7 @@ public class Lab_3_4 {
         return arrAll;
     }
 
+    // Sort ASC
     public static void sortASC(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length - 1; i++) {
