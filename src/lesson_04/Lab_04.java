@@ -15,7 +15,7 @@ public class Lab_04 {
         arrayList = arr();
         System.out.println("The first list: " + arrayList);
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number to choose the menu: ");
+        System.out.print("Enter a number to show the menu: ");
         int option = scanner.nextInt();
         switch (option) {
             case 1:
