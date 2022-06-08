@@ -10,12 +10,6 @@ public class Lab_04 {
         System.out.print("Choose your option : ");
     }
 
-    private static String[] options = {
-            "1. Add number into ArrayList ",
-            "2. Print numbers",
-            "3. Get maximum number",
-            "4. Get minimum number"};
-
     public static void main(String[] args) {
         List<Integer> arrayList;
         arrayList = arr();
@@ -25,25 +19,28 @@ public class Lab_04 {
         int option = scanner.nextInt();
         switch (option) {
             case 1:
+                System.out.println("1. Add number into ArrayList");
                 System.out.println("Your new list is: " + arrayList);
                 break;
             case 2:
-                System.out.println("Print numbers: ");
+                System.out.println("2. Print numbers: ");
                 printNumbers(arrayList);
                 break;
             case 3:
-                System.out.println("The maximum number is: " + getMaximumNumber(arrayList));
+                System.out.println("3. Get maximum number: " + getMaximumNumber(arrayList));
                 break;
             case 4:
-                System.out.println("The minimum number is: " + getMinimumNumber(arrayList));
+                System.out.println("4. Get minimum number: " + getMinimumNumber(arrayList));
                 break;
             default:
                 System.out.println("Your option is invalid");
         }
     }
+
     public static int getMaximumNumber(List<Integer> list) {
         return Collections.max(list);
     }
+
     public static int getMinimumNumber(List<Integer> list) {
         return Collections.min(list);
     }
