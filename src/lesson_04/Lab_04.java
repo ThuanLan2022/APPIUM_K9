@@ -22,13 +22,16 @@ public class Lab_04 {
                     break;
                 case 2:
                     System.out.println("2. Print numbers: ");
+                    System.out.println("There are " + arrayList.size() +  " numbers in the array list as: ");
                     printNumbers(arrayList);
                     break;
                 case 3:
-                    System.out.println("3. Get maximum number: " + getMaximumNumber(arrayList));
+                    System.out.println("3. Get maximum number");
+                    System.out.println(" Maximum number is: " + getMaximumNumber(arrayList));
                     break;
                 case 4:
-                    System.out.println("4. Get minimum number: " + getMinimumNumber(arrayList));
+                    System.out.println("4. Get minimum number");
+                    System.out.println("Minimum number is: " + getMinimumNumber(arrayList));
                     break;
                 default:
                     System.out.println("Your option is invalid");
