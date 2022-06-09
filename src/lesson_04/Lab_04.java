@@ -1,40 +1,40 @@
 package lesson_04;
 
+import jdk.nashorn.internal.ir.WhileNode;
+
 import java.util.*;
 
 public class Lab_04 {
-    public static void printMenu(String[] options) {
-        for (String option : options) {
-            System.out.println(option);
-        }
-        System.out.print("Choose your option : ");
-    }
-
     public static void main(String[] args) {
         List<Integer> arrayList;
         arrayList = arr();
         System.out.println("The first list: " + arrayList);
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number to show the menu: ");
-        int option = scanner.nextInt();
-        switch (option) {
-            case 1:
-                System.out.println("1. Add number into ArrayList");
-                System.out.println("Your new list is: " + arrayList);
-                break;
-            case 2:
-                System.out.println("2. Print numbers: ");
-                printNumbers(arrayList);
-                break;
-            case 3:
-                System.out.println("3. Get maximum number: " + getMaximumNumber(arrayList));
-                break;
-            case 4:
-                System.out.println("4. Get minimum number: " + getMinimumNumber(arrayList));
-                break;
-            default:
-                System.out.println("Your option is invalid");
-        }
+
+        int option;
+        do {
+            System.out.print("Enter a number to show the menu: ");
+            option = scanner.nextInt();
+            switch (option) {
+                case 1:
+                    System.out.println("1. Add number into ArrayList");
+                    System.out.println("Your new list is: " + arrayList);
+                    break;
+                case 2:
+                    System.out.println("2. Print numbers: ");
+                    printNumbers(arrayList);
+                    break;
+                case 3:
+                    System.out.println("3. Get maximum number: " + getMaximumNumber(arrayList));
+                    break;
+                case 4:
+                    System.out.println("4. Get minimum number: " + getMinimumNumber(arrayList));
+                    break;
+                default:
+                    System.out.println("Your option is invalid");
+            }
+            //
+        } while (!(option == 0));
     }
 
     public static int getMaximumNumber(List<Integer> list) {
