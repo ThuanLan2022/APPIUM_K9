@@ -21,5 +21,7 @@ public class Lab_0603 {
         }
 
         System.out.println(" Expected output: " + result);
+        String regexResult = inputString.replaceAll("[^0-9]", "");
+        System.out.println(" Expected output by regex: "  + regexResult);
     }
 }
