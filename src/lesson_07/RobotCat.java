@@ -29,6 +29,10 @@ public class RobotCat {
         this.productionDate = productionDate;
     }
 
+    public String charge() {
+        return "Charging";
+    }
+
     @Override
     public String toString() {
         return "RobotCat{" +
